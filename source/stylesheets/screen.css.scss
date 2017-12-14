@@ -103,7 +103,7 @@ html, body {
   }
 
   .logo {
-    margin-bottom: $logo-margin;
+    margin: $logo-margin;
   }
 
   .search-results {
@@ -177,13 +177,23 @@ html, body {
     font-size: 12px;
   }
 
+  .toc-list-h3 {
+    display: none;
+    background-color: $nav-subitem-bg;
+  }
+
+  .toc-h3 {
+    padding-left: $nav-padding + $nav-padding + $nav-indent;
+    font-size: 12px;
+  }
+
   .toc-footer {
     padding: 1em 0;
     margin-top: 1em;
     border-top: 1px dashed $nav-footer-border-color;
 
     li,a {
-      color: $nav-text;
+      color: #002f36;
       text-decoration: none;
     }
 
@@ -206,10 +216,11 @@ html, body {
   white-space: nowrap;
   text-overflow: ellipsis;
   text-decoration: none;
-  color: #fff;
+  color: #002f36;
   transition-property: background;
   transition-timing-function: linear;
   transition-duration: 130ms;
+  cursor: pointer;
 }
 
 // button to show navigation on mobile devices
@@ -256,6 +267,7 @@ html, body {
   z-index: 10;
   background-color: $main-bg;
   min-height: 100%;
+  border-left: 1px solid #ddd;
 
   padding-bottom: 1px; // prevent margin overflow
 
@@ -271,6 +283,7 @@ html, body {
     right: 0;
     top: 0;
     bottom: 0;
+    border-left: 1px solid #ddd;
   }
 
   .lang-selector {
@@ -322,6 +335,7 @@ html, body {
   // to place content above the dark box
   position: relative;
   z-index: 30;
+  border-right: 1px solid #ddd;
 
   &:after {
     content: '';
@@ -343,7 +357,7 @@ html, body {
   }
 
   // the div is the tocify hidden div for placeholding stuff
-  &>h1, &>h2, &>div {
+  &>h1, &>h2, &>h3, &>div {
     clear:both;
   }
 
@@ -354,9 +368,9 @@ html, body {
     padding-bottom: 0.5em;
     margin-bottom: $h1-margin-bottom;
     margin-top: 2em;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    background-color: #fdfdfd;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: #ffffff;
   }
 
   h1:first-child, div:first-child + h1 {
@@ -375,6 +389,10 @@ html, body {
     background-image: linear-gradient(to bottom, rgba(#fff, 0.2), rgba(#fff, 0));
   }
 
+  h4 {
+    font-size: 14px;
+  }
+
   // h2s right after h1s should bump right up
   // against the h1s.
   h1 + h2, h1 + div + h2 {
@@ -384,13 +402,9 @@ html, body {
 
   h3, h4, h5, h6 {
     @extend %header-font;
-    font-size: 15px;
-    margin-top: 2.5em;
-    margin-bottom: 0.8em;
-  }
-
-  h4, h5, h6 {
-    font-size: 10px;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   hr {
@@ -484,7 +498,7 @@ html, body {
   aside:before {
     vertical-align: middle;
     padding-right: 0.5em;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   aside.notice:before {
