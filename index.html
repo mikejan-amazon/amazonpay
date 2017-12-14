@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>API Reference</title>
+    <title>Integration Platform</title>
 
     <style>
       .highlight table td { padding: 5px; }
@@ -209,7 +209,7 @@
       </span>
     </a>
     <div class="toc-wrapper">
-      <img src="images/logo.png" class="logo" alt="Logo" />
+      <img src="images/amazon_logo.png" class="logo" alt="Amazon logo" />
         <div class="lang-selector">
               <a href="#" data-language-name="shell">shell</a>
               <a href="#" data-language-name="ruby">ruby</a>
@@ -222,7 +222,152 @@
         <ul class="search-results"></ul>
       <div id="toc" class="toc-list-h1">
           <li>
-            <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
+            <a href="#solution-overview" class="toc-h1 toc-link" data-title="Solution Overview">Solution Overview</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#amazon-pay-products" class="toc-h2 toc-link" data-title="Amazon Pay Products">Amazon Pay Products</a>
+                      <ul class="toc-list-h3">
+                        <li>
+                          <a href="#login-with-amazon" class="toc-h3 toc-link" data-title="Solution Overview">Login with Amazon</a>
+                        </li>
+                        <li>
+                          <a href="#pay-with-amazon" class="toc-h3 toc-link" data-title="Solution Overview">Pay with Amazon</a>
+                        </li>
+                  </ul>
+                  </li>
+                  <li>
+                    <a href="#amazon-pay-solutions" class="toc-h2 toc-link" data-title="Amazon Pay Solutions">Amazon Pay Solutions</a>
+                  </li>
+                  <li>
+                    <a href="#integration-adviser" class="toc-h2 toc-link" data-title="Integration Adviser">Integration Adviser</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#integration-guide" class="toc-h1 toc-link" data-title="Integration Guide">Integration Guide</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#welcome-package" class="toc-h2 toc-link" data-title="Welcome Package">Welcome Package</a>
+                  </li>
+                  <li>
+                    <a href="#integration-guides" class="toc-h2 toc-link" data-title="Integration Guides">Integration Guides</a>
+                  </li>
+                  <li>
+                    <a href="#sample-application" class="toc-h2 toc-link" data-title="Sample Application">Sample Application</a>
+                  </li>
+                  <li>
+                    <a href="#go-live-checkoff-list" class="toc-h2 toc-link" data-title="Go-live checkoff list">Go-live checkoff list</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#api-reference" class="toc-h1 toc-link" data-title="API Reference">API Reference</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#overview-amp-basics" class="toc-h2 toc-link" data-title="Overview &amp; Basics">Overview &amp; Basics</a>
+                  </li>
+                  <li>
+                    <a href="#endpoints" class="toc-h2 toc-link" data-title="Endpoints">Endpoints</a>
+                  </li>
+                  <li>
+                    <a href="#authorization" class="toc-h2 toc-link" data-title="Authorization">Authorization</a>
+                  </li>
+                  <li>
+                    <a href="#payment-apis" class="toc-h2 toc-link" data-title="Payment APIs">Payment APIs</a>
+                      <ul class="toc-list-h3">
+                        <li>
+                          <a href="#authorize" class="toc-h3 toc-link" data-title="API Reference">Authorize</a>
+                        </li>
+                        <li>
+                          <a href="#cancelorderreference" class="toc-h3 toc-link" data-title="API Reference">CancelOrderReference</a>
+                        </li>
+                        <li>
+                          <a href="#capture" class="toc-h3 toc-link" data-title="API Reference">Capture</a>
+                        </li>
+                        <li>
+                          <a href="#closeauthorization" class="toc-h3 toc-link" data-title="API Reference">CloseAuthorization</a>
+                        </li>
+                        <li>
+                          <a href="#closeorderreference" class="toc-h3 toc-link" data-title="API Reference">CloseOrderReference</a>
+                        </li>
+                        <li>
+                          <a href="#confirmorderreference" class="toc-h3 toc-link" data-title="API Reference">ConfirmOrderReference</a>
+                        </li>
+                        <li>
+                          <a href="#getauthrorizationdetails" class="toc-h3 toc-link" data-title="API Reference">GetAuthrorizationDetails</a>
+                        </li>
+                        <li>
+                          <a href="#getcapturedetails" class="toc-h3 toc-link" data-title="API Reference">GetCaptureDetails</a>
+                        </li>
+                        <li>
+                          <a href="#getorderreferencedetails" class="toc-h3 toc-link" data-title="API Reference">GetOrderReferenceDetails</a>
+                        </li>
+                        <li>
+                          <a href="#getrefunddetails" class="toc-h3 toc-link" data-title="API Reference">GetRefundDetails</a>
+                        </li>
+                        <li>
+                          <a href="#getservicestatus" class="toc-h3 toc-link" data-title="API Reference">GetServiceStatus</a>
+                        </li>
+                        <li>
+                          <a href="#refund" class="toc-h3 toc-link" data-title="API Reference">Refund</a>
+                        </li>
+                        <li>
+                          <a href="#setorderreferencedetails" class="toc-h3 toc-link" data-title="API Reference">SetOrderReferenceDetails</a>
+                        </li>
+                  </ul>
+                  </li>
+                  <li>
+                    <a href="#subscription-apis" class="toc-h2 toc-link" data-title="Subscription APIs">Subscription APIs</a>
+                      <ul class="toc-list-h3">
+                        <li>
+                          <a href="#authorizeonbillingagreement" class="toc-h3 toc-link" data-title="API Reference">AuthorizeOnBillingAgreement</a>
+                        </li>
+                        <li>
+                          <a href="#closebillingagreement" class="toc-h3 toc-link" data-title="API Reference">CloseBillingAgreement</a>
+                        </li>
+                        <li>
+                          <a href="#confirmbillingagreement" class="toc-h3 toc-link" data-title="API Reference">ConfirmBillingAgreement</a>
+                        </li>
+                        <li>
+                          <a href="#createrorderreferenceforid" class="toc-h3 toc-link" data-title="API Reference">CreaterOrderReferenceForId</a>
+                        </li>
+                        <li>
+                          <a href="#getbillingagreementdetails" class="toc-h3 toc-link" data-title="API Reference">GetBillingAgreementDetails</a>
+                        </li>
+                        <li>
+                          <a href="#validatebillingagreement" class="toc-h3 toc-link" data-title="API Reference">ValidateBillingAgreement</a>
+                        </li>
+                  </ul>
+                  </li>
+                  <li>
+                    <a href="#api-libraries" class="toc-h2 toc-link" data-title="API Libraries">API Libraries</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#resource-center" class="toc-h1 toc-link" data-title="Resource Center">Resource Center</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#ux-guidelines" class="toc-h2 toc-link" data-title="UX Guidelines">UX Guidelines</a>
+                  </li>
+                  <li>
+                    <a href="#developer-fourms" class="toc-h2 toc-link" data-title="Developer Fourms">Developer Fourms</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#advanced-features" class="toc-h1 toc-link" data-title="Advanced Features">Advanced Features</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#alexa-documentation" class="toc-h2 toc-link" data-title="Alexa Documentation">Alexa Documentation</a>
+                  </li>
+                  <li>
+                    <a href="#mobile-documentation" class="toc-h2 toc-link" data-title="Mobile Documentation">Mobile Documentation</a>
+                  </li>
+                  <li>
+                    <a href="#fire-device-documentation" class="toc-h2 toc-link" data-title="Fire Device Documentation">Fire Device Documentation</a>
+                  </li>
+              </ul>
           </li>
           <li>
             <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
@@ -232,12 +377,36 @@
               <ul class="toc-list-h2">
                   <li>
                     <a href="#get-all-kittens" class="toc-h2 toc-link" data-title="Get All Kittens">Get All Kittens</a>
+                      <ul class="toc-list-h3">
+                        <li>
+                          <a href="#http-request" class="toc-h3 toc-link" data-title="Kittens">HTTP Request</a>
+                        </li>
+                        <li>
+                          <a href="#query-parameters" class="toc-h3 toc-link" data-title="Kittens">Query Parameters</a>
+                        </li>
+                  </ul>
                   </li>
                   <li>
                     <a href="#get-a-specific-kitten" class="toc-h2 toc-link" data-title="Get a Specific Kitten">Get a Specific Kitten</a>
+                      <ul class="toc-list-h3">
+                        <li>
+                          <a href="#http-request-2" class="toc-h3 toc-link" data-title="Kittens">HTTP Request</a>
+                        </li>
+                        <li>
+                          <a href="#url-parameters" class="toc-h3 toc-link" data-title="Kittens">URL Parameters</a>
+                        </li>
+                  </ul>
                   </li>
                   <li>
                     <a href="#delete-a-specific-kitten" class="toc-h2 toc-link" data-title="Delete a Specific Kitten">Delete a Specific Kitten</a>
+                      <ul class="toc-list-h3">
+                        <li>
+                          <a href="#http-request-3" class="toc-h3 toc-link" data-title="Kittens">HTTP Request</a>
+                        </li>
+                        <li>
+                          <a href="#url-parameters-2" class="toc-h3 toc-link" data-title="Kittens">URL Parameters</a>
+                        </li>
+                  </ul>
                   </li>
               </ul>
           </li>
@@ -246,20 +415,681 @@
           </li>
       </div>
         <ul class="toc-footer">
-            <li><a href='#'>Sign Up for a Developer Key</a></li>
-            <li><a href='https://github.com/lord/slate'>Documentation Powered by Slate</a></li>
+            <li><a href='#'>Sign up</a></li>
         </ul>
     </div>
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <h1 id='introduction'>Introduction</h1>
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+        <h1 id='solution-overview'>Solution Overview</h1><h2 id='amazon-pay-products'>Amazon Pay Products</h2><h3 id='login-with-amazon'>Login with Amazon</h3>
+<p><a href="https://login.amazon.com/" target="_blank">Login with Amazon</a> allows developers to leverage the Amazon.com user authentication system to connect with their users and personalize their experience.</p>
+<h3 id='pay-with-amazon'>Pay with Amazon</h3>
+<p><a href="https://pay.amazon.com" target="_blank">Pay with Amazon</a> allows merchants to accept online and mobile payments on their ecommerce site securely.</p>
+<h2 id='amazon-pay-solutions'>Amazon Pay Solutions</h2><h2 id='integration-adviser'>Integration Adviser</h2>
+<p>This guide is intended for merchants that want to integrate with Amazon Pay for handling one-time payments for purchases made from their website, but we offer other integration options, too.</p>
+<h4 id='which-is-the-right-integration-option-for-you'>Which is the right integration option for you?</h4>
+<p>The following table shows the various integration options available to you. The table begins with the most streamlined integration option and ends with the most technically flexible and powerful option:</p>
 
-<p>We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
+<table>
+    <tr>
+        <td><p><strong>If you want to…</strong></p></td>
+        <td><p><strong>…Use this guide or resource</strong></p></td>
+    </tr>
+    <tr>
+        <td >
+            <p>Use a tool to generate an Amazon Pay button</p>
+            <p>Offer flat-rate tax and shipping options</p>
+            <p>Manage your orders using only the Payment Management Dashboard in Seller Central</p>
+            <p>Avoid API requests</p>
+        </td>
+        <td>
+            <p>The <a href="/us/documentation/express/201747030" target="_blank">Button Generator integration</a> section in the <em>Hosted integration guide</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Adjust the payment amount for simple tax and shipping options</p>
+            <p>Send buyers to Amazon-hosted checkout pages</p>
+            <p>Use API calls to manage your orders</p>
+        </td>
+        <td>
+            <p>The <a href="/us/documentation/express/201737510" target="_blank">Custom integration</a> section in the <em>Hosted integration guide</em>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Use an ecommerce provider (also known as a solution provider) to manage your buyer's transactions</p>
+        </td>
+        <td><p>Amazon Pay <a href="/us/solutionproviders" target="_blank">featured ecommerce providers</a></p></td>
+    </tr>
+    <tr>
+        <td>
+            <p>Set up one-time orders only (not recurring payments)</p>
+            <p>Maintain complete control of the checkout experience on your site</p>
+            <p>Set up API-based transaction management</p>
+        </td>
+        <td><p>The guide you are reading right now</p></td>
+    </tr>
+    <tr>
+        <td>
+            <p>Set up for recurring payments (subscription orders)</p>
+            <p>Maintain complete control of the checkout experience on your site</p>
+            <p>Set up API-based transaction management</p>
+        </td>
+        <td><p><a href="/us/documentation/automatic/201752090" target="_blank">Amazon Pay and Login with Amazon recurring payments integration guide</a></p></td>
+    </tr>
+</table>
+<h1 id='integration-guide'>Integration Guide</h1><h2 id='welcome-package'>Welcome Package</h2><h2 id='integration-guides'>Integration Guides</h2><h2 id='sample-application'>Sample Application</h2><h2 id='go-live-checkoff-list'>Go-live checkoff list</h2><h1 id='api-reference'>API Reference</h1><h2 id='overview-amp-basics'>Overview &amp; Basics</h2><h4 id='introduction'>Introduction</h4>
+<p>The Amazon Pay API section helps you to process payments for purchases made by buyers on your website using the Amazon Pay service. This API section enables you to programmatically retrieve shipping and payment information provided by the buyer from their Amazon account. It allows you to authorize, capture, and refund payments, enabling a variety of payments scenarios.</p>
 
-<p>This example API documentation page was created with <a href="https://github.com/lord/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&#39;s documentation.</p>
-<h1 id='authentication'>Authentication</h1>
+<p><strong>Note:</strong> The Amazon Pay API section is only applicable to payments made through the Amazon Pay service offered by Amazon Pay. You cannot use this API section to process payments for Amazon Marketplace, Amazon Webstore, or Checkout by Amazon.</p>
+
+<p>Using the Amazon Pay API section of Amazon Marketplace Web Service (Amazon MWS), you can:</p>
+
+<ul>
+    <li>Create and manage a billing agreement to secure the buyer's permission to charge their selected payment method on a recurring basis without requiring their permission each time. You typically do not need a billing agreement if your buyers will visit your site each time they place an order or if you do not need to enable automatic payments. With a billing agreement, you can:</li>
+
+    <ul>
+        <li>Obtain the shipping information from the buyer so that you can calculate shipping charges and tax for automatic payments.</li>
+        <li>Obtain information about the amount that you are allowed to charge a buyer each month using Amazon Pay.</li>
+        <li>Set the description and other optional information about the automatic payment.</li>
+        <li>Confirm the billing agreement after the buyer has signed up for automatic payments on your site.</li>
+        <li>Close the billing agreement if you or the buyer want to terminate the automatic payment relationship.</li>
+    </ul>
+    <li>Create and manage a limited representation of an order, hereafter referred to as an order reference or Order Reference object, through the Amazon Pay service. With an order reference, you can:</li>
+
+    <ul>
+        <li>Obtain shipping information from the buyer so you can calculate shipping charges and tax.</li>
+        <li>Set the amount, description, and other optional information for the order.</li>
+        <li>Confirm the order after the buyer has finished placing an order on your website.</li>
+        <li>Cancel the order at the request of either the buyer or yourself.</li>
+        <li>Close the order after it has been processed and completed.</li>
+    </ul>
+
+    <li>Programmatically authorize, capture, and refund money for purchases made by the buyer at your website.</li>
+</ul>
+<h4 id='terminology'>Terminology</h4>
+<table cellspacing="0" cellpadding="0">
+    <tr>
+        <td><strong>Term</strong></td>
+        <td><strong>Description</strong></td>
+    </tr>
+    <tr>
+        <td>Billing Agreement</td>
+        <td>A Billing Agreement object tracks the buyer's preferred payment method, preferred shipping address, and authorization for automatic payments. A billing agreement can have an indefinite lifetime and support an indefinite number of purchases.</td>
+    </tr>
+    <tr>
+        <td>Order Reference</td>
+        <td>An Order Reference object is a record of each purchase made by the buyer. It tracks the payment method, shipping address, and the amount that the buyer agreed to pay for that purchase. For each automatic payment, an order reference is created from the shipping and payment information stored in the billing agreement. An order reference is valid for 180 days and applies to only one purchase. You may have up to 10 authorizations on an order reference.</td>
+    </tr>
+    <tr>
+        <td>Authorization</td>
+        <td>An Authorization object tracks the availability of funds and secures them for future payment against the payment instruments stored in the order reference.</td>
+    </tr>
+    <tr>
+        <td>Capture</td>
+        <td>A Capture object tracks the movement of funds previously secured by authorization from the buyer's payment instruments to the merchant's account.</td>
+    </tr>
+    <tr>
+        <td>Refund</td>
+        <td>A Refund object tracks the movement of previously captured funds from the merchant's account to the buyer's payment instruments.</td>
+    </tr>
+    <tr>
+        <td>Transaction</td>
+        <td>A transaction is a generic term that is used for all of the types of payment events against an order reference. This includes authorizations, captures, refunds, A-to-z Claims, chargebacks, fees, and other miscellaneous transactions.</td>
+    </tr>
+</table>
+<h2 id='endpoints'>Endpoints</h2>
+<p>All API calls to the Amazon Pay API section service should be submitted to the following endpoints:</p>
+
+<ul>
+    <li>Germany (DE) and United Kingdom (UK):</li>
+    <ul>
+        <li>Production: https://mws-eu.amazonservices.com/OffAmazonPayments/2013-01-01/</li>
+        <li>Sandbox: https://mws-eu.amazonservices.com/OffAmazonPayments_Sandbox/2013-01-01/</li>
+    </ul>
+    <li>United States (US):</li>
+    <ul>
+        <li>Production: https://mws.amazonservices.com/OffAmazonPayments/2013-01-01/</li>
+        <li>Sandbox: https://mws.amazonservices.com/OffAmazonPayments_Sandbox/2013-01-01/</li>
+    </ul>
+</ul>
+<h2 id='authorization'>Authorization</h2><h2 id='payment-apis'>Payment APIs</h2><h3 id='authorize'>Authorize</h3>
+<p>Reserves a specified amount against the payment methods stored in the order reference.</p>
+<h4 id='description'>Description</h4>
+<p>The &#39;Authorize&#39; operation reserves a specified amount against the payment methods stored in the order reference. To charge the payment methods, you must either set the CaptureNow request parameter to true or call the &#39;Capture&#39; operation after you call this operation. An authorization is only valid for a particular time period, which is specified in the response of the operation. At the end of the time period, the authorization expires and a notification is sent to you if you have set up Instant Payment Notifications.</p>
+
+<p>This operation has a maximum request quota of 10 and a restore rate of one request every second in the production environment. It has a maximum request quota of two and a restore rate of one request every two seconds in the sandbox environment. For definitions of throttling terminology and for a complete explanation of throttling, see <a href="http://docs.developer.amazonservices.com/en_US/dev_guide/DG_Throttling.html" target="_blank">Throttling: Limits to how often you can submit requests</a> in the Amazon MWS Developer Guide.</p>
+<h4 id='request-parameters'>Request Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xxx</td>
+<td>xxx</td>
+<td>xxx</td>
+</tr>
+</tbody></table>
+<pre class="highlight ruby tab-ruby"><code>
+</code></pre><pre class="highlight python tab-python"><code>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
+  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code>
+</code></pre>
+<blockquote>
+<p>Response:</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code>
+</code></pre><h3 id='cancelorderreference'>CancelOrderReference</h3>
+<p>Reserves a specified amount against the payment methods stored in the order reference.</p>
+<h4 id='description-2'>Description</h4><h4 id='request-parameters-2'>Request Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xxx</td>
+<td>xxx</td>
+<td>xxx</td>
+</tr>
+</tbody></table>
+<pre class="highlight ruby tab-ruby"><code>
+</code></pre><pre class="highlight python tab-python"><code>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
+  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code>
+</code></pre>
+<blockquote>
+<p>Response:</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code>
+</code></pre><h3 id='capture'>Capture</h3>
+<p>Reserves a specified amount against the payment methods stored in the order reference.</p>
+<h4 id='description-3'>Description</h4><h4 id='request-parameters-3'>Request Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xxx</td>
+<td>xxx</td>
+<td>xxx</td>
+</tr>
+</tbody></table>
+<pre class="highlight ruby tab-ruby"><code>
+</code></pre><pre class="highlight python tab-python"><code>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
+  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code>
+</code></pre>
+<blockquote>
+<p>Response:</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code>
+</code></pre><h3 id='closeauthorization'>CloseAuthorization</h3>
+<p>Reserves a specified amount against the payment methods stored in the order reference.</p>
+<h4 id='description-4'>Description</h4><h4 id='request-parameters-4'>Request Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xxx</td>
+<td>xxx</td>
+<td>xxx</td>
+</tr>
+</tbody></table>
+<pre class="highlight ruby tab-ruby"><code>
+</code></pre><pre class="highlight python tab-python"><code>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
+  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code>
+</code></pre>
+<blockquote>
+<p>Response:</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code>
+</code></pre><h3 id='closeorderreference'>CloseOrderReference</h3>
+<p>Reserves a specified amount against the payment methods stored in the order reference.</p>
+<h4 id='description-5'>Description</h4><h4 id='request-parameters-5'>Request Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xxx</td>
+<td>xxx</td>
+<td>xxx</td>
+</tr>
+</tbody></table>
+<pre class="highlight ruby tab-ruby"><code>
+</code></pre><pre class="highlight python tab-python"><code>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
+  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code>
+</code></pre>
+<blockquote>
+<p>Response:</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code>
+</code></pre><h3 id='confirmorderreference'>ConfirmOrderReference</h3>
+<p>Reserves a specified amount against the payment methods stored in the order reference.</p>
+<h4 id='description-6'>Description</h4><h4 id='request-parameters-6'>Request Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xxx</td>
+<td>xxx</td>
+<td>xxx</td>
+</tr>
+</tbody></table>
+<pre class="highlight ruby tab-ruby"><code>
+</code></pre><pre class="highlight python tab-python"><code>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
+  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code>
+</code></pre>
+<blockquote>
+<p>Response:</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code>
+</code></pre><h3 id='getauthrorizationdetails'>GetAuthrorizationDetails</h3>
+<p>Reserves a specified amount against the payment methods stored in the order reference.</p>
+<h4 id='description-7'>Description</h4><h4 id='request-parameters-7'>Request Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xxx</td>
+<td>xxx</td>
+<td>xxx</td>
+</tr>
+</tbody></table>
+<pre class="highlight ruby tab-ruby"><code>
+</code></pre><pre class="highlight python tab-python"><code>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
+  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code>
+</code></pre>
+<blockquote>
+<p>Response:</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code>
+</code></pre><h3 id='getcapturedetails'>GetCaptureDetails</h3>
+<p>Reserves a specified amount against the payment methods stored in the order reference.</p>
+<h4 id='description-8'>Description</h4><h4 id='request-parameters-8'>Request Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xxx</td>
+<td>xxx</td>
+<td>xxx</td>
+</tr>
+</tbody></table>
+<pre class="highlight ruby tab-ruby"><code>
+</code></pre><pre class="highlight python tab-python"><code>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
+  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code>
+</code></pre>
+<blockquote>
+<p>Response:</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code>
+</code></pre><h3 id='getorderreferencedetails'>GetOrderReferenceDetails</h3>
+<p>Reserves a specified amount against the payment methods stored in the order reference.</p>
+<h4 id='description-9'>Description</h4><h4 id='request-parameters-9'>Request Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xxx</td>
+<td>xxx</td>
+<td>xxx</td>
+</tr>
+</tbody></table>
+<pre class="highlight ruby tab-ruby"><code>
+</code></pre><pre class="highlight python tab-python"><code>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
+  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code>
+</code></pre>
+<blockquote>
+<p>Response:</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code>
+</code></pre><h3 id='getrefunddetails'>GetRefundDetails</h3>
+<p>Reserves a specified amount against the payment methods stored in the order reference.</p>
+<h4 id='description-10'>Description</h4><h4 id='request-parameters-10'>Request Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xxx</td>
+<td>xxx</td>
+<td>xxx</td>
+</tr>
+</tbody></table>
+<pre class="highlight ruby tab-ruby"><code>
+</code></pre><pre class="highlight python tab-python"><code>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
+  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code>
+</code></pre>
+<blockquote>
+<p>Response:</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code>
+</code></pre><h3 id='getservicestatus'>GetServiceStatus</h3>
+<p>Reserves a specified amount against the payment methods stored in the order reference.</p>
+<h4 id='description-11'>Description</h4><h4 id='request-parameters-11'>Request Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xxx</td>
+<td>xxx</td>
+<td>xxx</td>
+</tr>
+</tbody></table>
+<pre class="highlight ruby tab-ruby"><code>
+</code></pre><pre class="highlight python tab-python"><code>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
+  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code>
+</code></pre>
+<blockquote>
+<p>Response:</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code>
+</code></pre><h3 id='refund'>Refund</h3>
+<p>Reserves a specified amount against the payment methods stored in the order reference.</p>
+<h4 id='description-12'>Description</h4><h4 id='request-parameters-12'>Request Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xxx</td>
+<td>xxx</td>
+<td>xxx</td>
+</tr>
+</tbody></table>
+<pre class="highlight ruby tab-ruby"><code>
+</code></pre><pre class="highlight python tab-python"><code>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
+  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code>
+</code></pre>
+<blockquote>
+<p>Response:</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code>
+</code></pre><h3 id='setorderreferencedetails'>SetOrderReferenceDetails</h3>
+<p>Reserves a specified amount against the payment methods stored in the order reference.</p>
+<h4 id='description-13'>Description</h4><h4 id='request-parameters-13'>Request Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xxx</td>
+<td>xxx</td>
+<td>xxx</td>
+</tr>
+</tbody></table>
+<pre class="highlight ruby tab-ruby"><code>
+</code></pre><pre class="highlight python tab-python"><code>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
+  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code>
+</code></pre>
+<blockquote>
+<p>Response:</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code>
+</code></pre><h2 id='subscription-apis'>Subscription APIs</h2>
+<p>Reserves a specified amount against the payment methods stored in the order reference.</p>
+<h4 id='description-14'>Description</h4><h4 id='request-parameters-14'>Request Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xxx</td>
+<td>xxx</td>
+<td>xxx</td>
+</tr>
+</tbody></table>
+<pre class="highlight ruby tab-ruby"><code>
+</code></pre><pre class="highlight python tab-python"><code>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
+  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code>
+</code></pre>
+<blockquote>
+<p>Response:</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code>
+</code></pre><h3 id='authorizeonbillingagreement'>AuthorizeOnBillingAgreement</h3>
+<p>Reserves a specified amount against the payment methods stored in the order reference.</p>
+<h4 id='description-15'>Description</h4><h4 id='request-parameters-15'>Request Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xxx</td>
+<td>xxx</td>
+<td>xxx</td>
+</tr>
+</tbody></table>
+<pre class="highlight ruby tab-ruby"><code>
+</code></pre><pre class="highlight python tab-python"><code>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
+  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code>
+</code></pre>
+<blockquote>
+<p>Response:</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code>
+</code></pre><h3 id='closebillingagreement'>CloseBillingAgreement</h3>
+<p>Reserves a specified amount against the payment methods stored in the order reference.</p>
+<h4 id='description-16'>Description</h4><h4 id='request-parameters-16'>Request Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xxx</td>
+<td>xxx</td>
+<td>xxx</td>
+</tr>
+</tbody></table>
+<pre class="highlight ruby tab-ruby"><code>
+</code></pre><pre class="highlight python tab-python"><code>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
+  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code>
+</code></pre>
+<blockquote>
+<p>Response:</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code>
+</code></pre><h3 id='confirmbillingagreement'>ConfirmBillingAgreement</h3>
+<p>Reserves a specified amount against the payment methods stored in the order reference.</p>
+<h4 id='description-17'>Description</h4><h4 id='request-parameters-17'>Request Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xxx</td>
+<td>xxx</td>
+<td>xxx</td>
+</tr>
+</tbody></table>
+<pre class="highlight ruby tab-ruby"><code>
+</code></pre><pre class="highlight python tab-python"><code>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
+  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code>
+</code></pre>
+<blockquote>
+<p>Response:</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code>
+</code></pre><h3 id='createrorderreferenceforid'>CreaterOrderReferenceForId</h3>
+<p>Reserves a specified amount against the payment methods stored in the order reference.</p>
+<h4 id='description-18'>Description</h4><h4 id='request-parameters-18'>Request Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xxx</td>
+<td>xxx</td>
+<td>xxx</td>
+</tr>
+</tbody></table>
+<pre class="highlight ruby tab-ruby"><code>
+</code></pre><pre class="highlight python tab-python"><code>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
+  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code>
+</code></pre>
+<blockquote>
+<p>Response:</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code>
+</code></pre><h3 id='getbillingagreementdetails'>GetBillingAgreementDetails</h3>
+<p>Reserves a specified amount against the payment methods stored in the order reference.</p>
+<h4 id='description-19'>Description</h4><h4 id='request-parameters-19'>Request Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xxx</td>
+<td>xxx</td>
+<td>xxx</td>
+</tr>
+</tbody></table>
+<pre class="highlight ruby tab-ruby"><code>
+</code></pre><pre class="highlight python tab-python"><code>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
+  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code>
+</code></pre>
+<blockquote>
+<p>Response:</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code>
+</code></pre><h3 id='validatebillingagreement'>ValidateBillingAgreement</h3>
+<p>Reserves a specified amount against the payment methods stored in the order reference.</p>
+<h4 id='description-20'>Description</h4><h4 id='request-parameters-20'>Request Parameters</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>xxx</td>
+<td>xxx</td>
+<td>xxx</td>
+</tr>
+</tbody></table>
+<pre class="highlight ruby tab-ruby"><code>
+</code></pre><pre class="highlight python tab-python"><code>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
+  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code>
+</code></pre>
+<blockquote>
+<p>Response:</p>
+</blockquote>
+<pre class="highlight xml tab-xml"><code>
+</code></pre><h2 id='api-libraries'>API Libraries</h2>
+<p>These tools, built for your programming language, can streamline your integration.</p>
+
+<ul>
+<li>PHP</li>
+<li>Java</li>
+<li>Ruby</li>
+<li>Python</li>
+<li>C#</li>
+</ul>
+<h1 id='resource-center'>Resource Center</h1><h2 id='ux-guidelines'>UX Guidelines</h2><h2 id='developer-fourms'>Developer Fourms</h2><h1 id='advanced-features'>Advanced Features</h1><h2 id='alexa-documentation'>Alexa Documentation</h2><h2 id='mobile-documentation'>Mobile Documentation</h2><h2 id='fire-device-documentation'>Fire Device Documentation</h2><h1 id='authentication'>Authentication</h1>
 <blockquote>
 <p>To authorize, use this code:</p>
 </blockquote>
