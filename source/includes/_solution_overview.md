@@ -4,8 +4,6 @@
 
 ### Login with Amazon
 
-### Login with Amazon
-
 <a href="https://login.amazon.com/" target="_blank">Login with Amazon</a> allows developers to leverage the Amazon.com user authentication system to connect with their users and personalize their experience.
 
 ### Pay with Amazon
