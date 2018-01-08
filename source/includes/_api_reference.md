@@ -2,7 +2,7 @@
 
 ## Overview & Basics
 
-#### Introduction
+##### Introduction
 
 The Amazon Pay API section helps you to process payments for purchases made by buyers on your website using the Amazon Pay service. This API section enables you to programmatically retrieve shipping and payment information provided by the buyer from their Amazon account. It allows you to authorize, capture, and refund payments, enabling a variety of payments scenarios.
 
@@ -33,7 +33,7 @@ Using the Amazon Pay API section of Amazon Marketplace Web Service (Amazon MWS),
 	<li>Programmatically authorize, capture, and refund money for purchases made by the buyer at your website.</li>
 </ul>
 
-#### Terminology
+##### Terminology
 
 <table cellspacing="0" cellpadding="0">
 	<tr>
@@ -92,13 +92,13 @@ All API calls to the Amazon Pay API section service should be submitted to the f
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
-#### Description
+##### Description
 
 The 'Authorize' operation reserves a specified amount against the payment methods stored in the order reference. To charge the payment methods, you must either set the CaptureNow request parameter to true or call the 'Capture' operation after you call this operation. An authorization is only valid for a particular time period, which is specified in the response of the operation. At the end of the time period, the authorization expires and a notification is sent to you if you have set up Instant Payment Notifications.
 
 This operation has a maximum request quota of 10 and a restore rate of one request every second in the production environment. It has a maximum request quota of two and a restore rate of one request every two seconds in the sandbox environment. For definitions of throttling terminology and for a complete explanation of throttling, see <a href="http://docs.developer.amazonservices.com/en_US/dev_guide/DG_Throttling.html" target="_blank">Throttling: Limits to how often you can submit requests</a> in the Amazon MWS Developer Guide.
 
-#### Request Parameters
+##### Request Parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------
@@ -132,9 +132,9 @@ curl "http://example.com/api/kittens"
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
-#### Description
+##### Description
 
-#### Request Parameters
+##### Request Parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------
@@ -168,9 +168,9 @@ curl "http://example.com/api/kittens"
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
-#### Description
+##### Description
 
-#### Request Parameters
+##### Request Parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------
@@ -204,9 +204,9 @@ curl "http://example.com/api/kittens"
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
-#### Description
+##### Description
 
-#### Request Parameters
+##### Request Parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------
@@ -240,9 +240,9 @@ curl "http://example.com/api/kittens"
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
-#### Description
+##### Description
 
-#### Request Parameters
+##### Request Parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------
@@ -276,9 +276,9 @@ curl "http://example.com/api/kittens"
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
-#### Description
+##### Description
 
-#### Request Parameters
+##### Request Parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------
@@ -312,9 +312,9 @@ curl "http://example.com/api/kittens"
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
-#### Description
+##### Description
 
-#### Request Parameters
+##### Request Parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------
@@ -348,9 +348,9 @@ curl "http://example.com/api/kittens"
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
-#### Description
+##### Description
 
-#### Request Parameters
+##### Request Parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------
@@ -384,9 +384,9 @@ curl "http://example.com/api/kittens"
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
-#### Description
+##### Description
 
-#### Request Parameters
+##### Request Parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------
@@ -420,9 +420,9 @@ curl "http://example.com/api/kittens"
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
-#### Description
+##### Description
 
-#### Request Parameters
+##### Request Parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------
@@ -456,9 +456,9 @@ curl "http://example.com/api/kittens"
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
-#### Description
+##### Description
 
-#### Request Parameters
+##### Request Parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------
@@ -492,9 +492,9 @@ curl "http://example.com/api/kittens"
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
-#### Description
+##### Description
 
-#### Request Parameters
+##### Request Parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------
@@ -528,9 +528,9 @@ curl "http://example.com/api/kittens"
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
-#### Description
+##### Description
 
-#### Request Parameters
+##### Request Parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------
@@ -564,9 +564,9 @@ curl "http://example.com/api/kittens"
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
-#### Description
+##### Description
 
-#### Request Parameters
+##### Request Parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------
@@ -600,9 +600,9 @@ curl "http://example.com/api/kittens"
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
-#### Description
+##### Description
 
-#### Request Parameters
+##### Request Parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------
@@ -636,9 +636,9 @@ curl "http://example.com/api/kittens"
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
-#### Description
+##### Description
 
-#### Request Parameters
+##### Request Parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------
@@ -672,9 +672,9 @@ curl "http://example.com/api/kittens"
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
-#### Description
+##### Description
 
-#### Request Parameters
+##### Request Parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------
@@ -708,9 +708,9 @@ curl "http://example.com/api/kittens"
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
-#### Description
+##### Description
 
-#### Request Parameters
+##### Request Parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------
@@ -744,9 +744,9 @@ curl "http://example.com/api/kittens"
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
-#### Description
+##### Description
 
-#### Request Parameters
+##### Request Parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------
@@ -780,9 +780,9 @@ curl "http://example.com/api/kittens"
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
-#### Description
+##### Description
 
-#### Request Parameters
+##### Request Parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------

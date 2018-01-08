@@ -1,6 +1,7 @@
 # Integration Guide
 
-## Welcome Package
+## Overview
+
 
 ## Integration Guides
 

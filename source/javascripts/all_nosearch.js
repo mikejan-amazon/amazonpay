@@ -4,7 +4,7 @@
 
 $(function() {
   //loadToc($('#toc'), '.toc-link', '.toc-list-h2', 10);
-  loadToc($('#toc'), '.toc-link', '.toc-list-h2, .toc-list-h3', 10);
+  loadToc($('#toc'), '.toc-link', '.toc-list-h2, .toc-list-h3, .toc-list-h4', 10);
   setupLanguages($('body').data('languages'));
   $('.content').imagesLoaded( function() {
     window.recacheHeights();

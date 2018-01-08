@@ -12,11 +12,21 @@
 
 ## Amazon Pay Solutions
 
+### Solutions
+
+#### Test
+
+### One-time Payment
+
+### Recurring Payment
+
+### Hosted Checkout
+
 ## Integration Adviser
 
 This guide is intended for merchants that want to integrate with Amazon Pay for handling one-time payments for purchases made from their website, but we offer other integration options, too.
 
-#### Which is the right integration option for you?
+##### Which is the right integration option for you?
 
 The following table shows the various integration options available to you. The table begins with the most streamlined integration option and ends with the most technically flexible and powerful option:
 

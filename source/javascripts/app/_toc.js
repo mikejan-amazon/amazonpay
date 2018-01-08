@@ -74,6 +74,9 @@
         $best.addClass("active");
         $best.parents(tocListSelector).addClass("active").siblings(tocLinkSelector).addClass('active-parent');
         $best.siblings(tocListSelector).addClass("active");
+        // MJ: Added code to expand only h2 and h3 lists
+        $best.parents(tocListSelector).find('.toc-list-h2, .toc-list-h3').addClass("active"); 
+        $best.siblings(tocListSelector).find('.toc-list-h2, .toc-list-h3').addClass("active");
         $toc.find(tocListSelector).filter(":not(.active)").slideUp(150);
         $toc.find(tocListSelector).filter(".active").slideDown(150);
         // TODO remove classnames
