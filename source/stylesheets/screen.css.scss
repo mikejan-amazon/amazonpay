@@ -49,7 +49,6 @@ html, body {
 
 .toc-wrapper {
   transition: left 0.3s ease-in-out;
-
   overflow-y: auto;
   overflow-x: hidden;
   position: fixed;
@@ -59,7 +58,7 @@ html, body {
   bottom: 0;
   width: $nav-width;
   background-color: $nav-bg;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: bold;
 
   // language selector for mobile devices
@@ -79,6 +78,7 @@ html, body {
 
   &>.search {
     position: relative;
+    margin-bottom: 20px;
 
     input {
       background: $nav-bg;
@@ -173,7 +173,7 @@ html, body {
   }
 
   .toc-h2 {
-    padding-left: $nav-padding;
+    padding-left: $nav-padding + $nav-padding;
     font-size: 12px;
   }
 
@@ -183,7 +183,7 @@ html, body {
   }
 
   .toc-h3 {
-    padding-left: $nav-padding + $nav-indent;
+    padding-left: $nav-padding + $nav-padding + $nav-indent;
     font-size: 12px;
   }
 
@@ -193,14 +193,14 @@ html, body {
   }
 
   .toc-h4 {
-    padding-left: $nav-padding + $nav-padding + $nav-indent;
+    padding-left: $nav-padding + $nav-padding + $nav-padding + $nav-indent;
     font-size: 12px;
   }
 
   .toc-footer {
     padding: 1em 0;
-    margin-top: 1em;
-    border-top: 1px dashed $nav-footer-border-color;
+    margin-top: 30px;
+    border-top: 1px solid #DDD;
 
     li,a {
       color: #002f36;
@@ -208,11 +208,11 @@ html, body {
     }
 
     a:hover {
-      text-decoration: underline;
+      text-decoration: none;
     }
 
     li {
-      font-size: 0.8em;
+      font-size: 12px;
       line-height: 1.7;
       text-decoration: none;
     }
@@ -300,6 +300,19 @@ html, body {
     position: fixed;
     z-index: 50;
     border-bottom: 5px solid $lang-select-active-bg;
+  }
+}
+
+.index {
+  max-width: 1000px;
+
+  .dark-box {
+    display:none;
+  }
+  .content {
+    &>h1, &>h2, &>h3, &>h4, &>h5, &>h6, &>p, &>table, &>ul, &>ol, &>aside, &>dl {
+      margin-right: 0px;
+    }
   }
 }
 
@@ -415,6 +428,11 @@ html, body {
     font-size: 14px;
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+
+  h5 {
+    font-size: 24px;
+    padding-bottom: 10px;
   }
 
   hr {
@@ -639,4 +657,16 @@ html, body {
 
 .highlight, .highlight .w {
   background-color: $code-bg;
+}
+
+a[href="#divider"] {
+  font-size: 0px;
+  padding: 0px 10px;
+  line-height: 0px;
+  border-bottom: 1px solid #DDD;
+  margin: 5px 15px;
+}
+
+#divider {
+  display:none;
 }

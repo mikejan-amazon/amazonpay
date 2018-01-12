@@ -15,10 +15,19 @@ under the License.
 %>
 <% language_tabs = current_page.data.language_tabs || [] %>
 <% page_content = yield %>
+<% including_page_content = yield %>
 <%
   if current_page.data.includes
     current_page.data.includes.each do |include|
       page_content += partial("includes/#{include}")
+    end
+  end
+%>
+
+<%
+  if current_page.data.including
+    current_page.data.including.each do |including|
+      including_page_content += partial("includes/#{including}")
     end
   end
 %>

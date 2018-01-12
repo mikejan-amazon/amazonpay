@@ -1,7 +1,7 @@
-# Advanced Features
+# Advanced features
 
-## Alexa Documentation
+## Alexa documentation
 
-## Mobile Documentation
+## Mobile documentation
 
-## Fire Device Documentation
+## Fire device documentation

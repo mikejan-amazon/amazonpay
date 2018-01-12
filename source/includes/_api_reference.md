@@ -1,6 +1,4 @@
-# API Reference
-
-## Overview & Basics
+# Overview
 
 ##### Introduction
 
@@ -86,9 +84,51 @@ All API calls to the Amazon Pay API section service should be submitted to the f
 ## Authorization
 
 
-## Payment APIs
+# Payment APIs
 
-### Authorize
+## Authorize
+
+> Sample Request:
+
+```ruby
+require 'kittn'
+
+api = Kittn::APIClient.authorize!('meowmeowmeow')
+api.kittens.get
+```
+
+```python
+import kittn
+
+api = kittn.authorize('meowmeowmeow')
+api.kittens.get()
+```
+
+```shell
+curl "http://example.com/api/kittens"
+  -H "Authorization: meowmeowmeow"
+```
+
+```javascript
+const kittn = require('kittn');
+
+let api = kittn.authorize('meowmeowmeow');
+let kittens = api.kittens.get();
+```
+
+> Sample Response:
+
+```json
+[
+  {
+    "id": 1,
+    "name": "Fluffums",
+    "breed": "calico",
+    "fluffiness": 6,
+    "cuteness": 7
+  }
+]
+```
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
@@ -98,6 +138,10 @@ The 'Authorize' operation reserves a specified amount against the payment method
 
 This operation has a maximum request quota of 10 and a restore rate of one request every second in the production environment. It has a maximum request quota of two and a restore rate of one request every two seconds in the sandbox environment. For definitions of throttling terminology and for a complete explanation of throttling, see <a href="http://docs.developer.amazonservices.com/en_US/dev_guide/DG_Throttling.html" target="_blank">Throttling: Limits to how often you can submit requests</a> in the Amazon MWS Developer Guide.
 
+##### Request Endpoint
+
+`GET http://example.com/api/`
+
 ##### Request Parameters
 
 Parameter | Default | Description
@@ -105,30 +149,8 @@ Parameter | Default | Description
 xxx | xxx | xxx
 
 
-```ruby
 
-```
-
-```python
-
-```
-
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-
-```
-
-> Response:
-
-```xml
-
-```
-
-### CancelOrderReference
+## CancelOrderReference
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
@@ -141,30 +163,7 @@ Parameter | Default | Description
 xxx | xxx | xxx
 
 
-```ruby
-
-```
-
-```python
-
-```
-
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-
-```
-
-> Response:
-
-```xml
-
-```
-
-### Capture
+## Capture
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
@@ -177,30 +176,7 @@ Parameter | Default | Description
 xxx | xxx | xxx
 
 
-```ruby
-
-```
-
-```python
-
-```
-
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-
-```
-
-> Response:
-
-```xml
-
-```
-
-### CloseAuthorization
+## CloseAuthorization
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
@@ -213,30 +189,7 @@ Parameter | Default | Description
 xxx | xxx | xxx
 
 
-```ruby
-
-```
-
-```python
-
-```
-
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-
-```
-
-> Response:
-
-```xml
-
-```
-
-### CloseOrderReference
+##CloseOrderReference
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
@@ -249,30 +202,7 @@ Parameter | Default | Description
 xxx | xxx | xxx
 
 
-```ruby
-
-```
-
-```python
-
-```
-
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-
-```
-
-> Response:
-
-```xml
-
-```
-
-### ConfirmOrderReference
+## ConfirmOrderReference
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
@@ -285,30 +215,7 @@ Parameter | Default | Description
 xxx | xxx | xxx
 
 
-```ruby
-
-```
-
-```python
-
-```
-
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-
-```
-
-> Response:
-
-```xml
-
-```
-
-### GetAuthrorizationDetails
+## GetAuthrorizationDetails
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
@@ -321,30 +228,7 @@ Parameter | Default | Description
 xxx | xxx | xxx
 
 
-```ruby
-
-```
-
-```python
-
-```
-
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-
-```
-
-> Response:
-
-```xml
-
-```
-
-### GetCaptureDetails
+## GetCaptureDetails
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
@@ -357,30 +241,7 @@ Parameter | Default | Description
 xxx | xxx | xxx
 
 
-```ruby
-
-```
-
-```python
-
-```
-
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-
-```
-
-> Response:
-
-```xml
-
-```
-
-### GetOrderReferenceDetails
+## GetOrderReferenceDetails
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
@@ -393,30 +254,7 @@ Parameter | Default | Description
 xxx | xxx | xxx
 
 
-```ruby
-
-```
-
-```python
-
-```
-
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-
-```
-
-> Response:
-
-```xml
-
-```
-
-### GetRefundDetails
+## GetRefundDetails
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
@@ -429,30 +267,7 @@ Parameter | Default | Description
 xxx | xxx | xxx
 
 
-```ruby
-
-```
-
-```python
-
-```
-
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-
-```
-
-> Response:
-
-```xml
-
-```
-
-### GetServiceStatus
+## GetServiceStatus
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
@@ -465,30 +280,7 @@ Parameter | Default | Description
 xxx | xxx | xxx
 
 
-```ruby
-
-```
-
-```python
-
-```
-
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-
-```
-
-> Response:
-
-```xml
-
-```
-
-### Refund
+## Refund
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
@@ -501,30 +293,7 @@ Parameter | Default | Description
 xxx | xxx | xxx
 
 
-```ruby
-
-```
-
-```python
-
-```
-
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-
-```
-
-> Response:
-
-```xml
-
-```
-
-### SetOrderReferenceDetails
+## SetOrderReferenceDetails
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
@@ -537,30 +306,7 @@ Parameter | Default | Description
 xxx | xxx | xxx
 
 
-```ruby
-
-```
-
-```python
-
-```
-
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-
-```
-
-> Response:
-
-```xml
-
-```
-
-## Subscription APIs
+# Subscription APIs
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
@@ -573,30 +319,7 @@ Parameter | Default | Description
 xxx | xxx | xxx
 
 
-```ruby
-
-```
-
-```python
-
-```
-
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-
-```
-
-> Response:
-
-```xml
-
-```
-
-### AuthorizeOnBillingAgreement
+## AuthorizeOnBillingAgreement
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
@@ -609,30 +332,7 @@ Parameter | Default | Description
 xxx | xxx | xxx
 
 
-```ruby
-
-```
-
-```python
-
-```
-
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-
-```
-
-> Response:
-
-```xml
-
-```
-
-### CloseBillingAgreement
+## CloseBillingAgreement
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
@@ -645,30 +345,7 @@ Parameter | Default | Description
 xxx | xxx | xxx
 
 
-```ruby
-
-```
-
-```python
-
-```
-
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-
-```
-
-> Response:
-
-```xml
-
-```
-
-### ConfirmBillingAgreement
+## ConfirmBillingAgreement
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
@@ -681,30 +358,7 @@ Parameter | Default | Description
 xxx | xxx | xxx
 
 
-```ruby
-
-```
-
-```python
-
-```
-
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-
-```
-
-> Response:
-
-```xml
-
-```
-
-### CreaterOrderReferenceForId
+## CreaterOrderReferenceForId
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
@@ -717,30 +371,7 @@ Parameter | Default | Description
 xxx | xxx | xxx
 
 
-```ruby
-
-```
-
-```python
-
-```
-
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-
-```
-
-> Response:
-
-```xml
-
-```
-
-### GetBillingAgreementDetails
+## GetBillingAgreementDetails
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
@@ -753,30 +384,7 @@ Parameter | Default | Description
 xxx | xxx | xxx
 
 
-```ruby
-
-```
-
-```python
-
-```
-
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-
-```
-
-> Response:
-
-```xml
-
-```
-
-### ValidateBillingAgreement
+## ValidateBillingAgreement
 
 Reserves a specified amount against the payment methods stored in the order reference.
 
@@ -788,36 +396,3 @@ Parameter | Default | Description
 --------- | ------- | -----------
 xxx | xxx | xxx
 
-
-```ruby
-
-```
-
-```python
-
-```
-
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-
-```
-
-> Response:
-
-```xml
-
-```
-
-## API Libraries
-
-These tools, built for your programming language, can streamline your integration.
-
-* PHP
-* Java
-* Ruby
-* Python
-* C#

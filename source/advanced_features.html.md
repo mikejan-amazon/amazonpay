@@ -3,21 +3,15 @@ title: Integration Platform
 
 
 toc_footers:
-  - <a href='api.html' target="_blank">API reference guide</a>
+  - <a href='api.html' target="_blank">API Reference Guide</a>
 
 includes:
   - solution_overview
-  - divider
-  - getting_started
   - one_time_payment_guide
   - automatic_payment_guide
   - hosted_solution_guide
-  - divider
   - resource_center
   - advanced_features
-
-including:
-  - solution_overview
 
 search: true
 ---
