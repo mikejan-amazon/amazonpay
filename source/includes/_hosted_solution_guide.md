@@ -1,4 +1,4 @@
-# Hosted solution
+# Hosted checkout
 
 ## Overview
 

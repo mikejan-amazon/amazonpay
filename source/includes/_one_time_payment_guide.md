@@ -1,4 +1,4 @@
-# One time payment
+# One-time payments
 
 ## Overview
 

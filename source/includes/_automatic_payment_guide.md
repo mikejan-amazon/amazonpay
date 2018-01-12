@@ -1,4 +1,4 @@
-# Automatic payment
+# Automatic payments
 
 ## Overview
 
