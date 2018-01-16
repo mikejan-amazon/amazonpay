@@ -34,6 +34,14 @@ html, body {
   background-color: $main-bg;
   height: 100%;
   -webkit-text-size-adjust: none; /* Never autoresize text */
+
+  .center {
+    text-align: center !important;
+  }
+
+  .bold {
+    font-weight: bold !important;
+  }
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -476,6 +484,8 @@ html, body {
     }
   }
 
+  
+
   dt {
     font-weight: bold;
   }
@@ -667,6 +677,26 @@ a[href="#divider"] {
   margin: 5px 15px;
 }
 
+// CUSTOM RULES
 #divider {
   display:none;
 }
+table#comparison_chart {
+  tr:last-child {
+    border: 0px;
+  }
+  tr {
+
+
+    td:first-child {
+      font-weight: bold;
+      border-right: 1px solid #ccc;
+    }
+  }
+}
+
+.external_link {
+  font-size: 10px;
+  margin-left: 5px;
+}
+

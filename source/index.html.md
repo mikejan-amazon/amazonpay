@@ -3,7 +3,7 @@ title: Integration Platform
 
 
 toc_footers:
-  - <a href='api.html' target="_blank">API reference guide</a>
+  - <a href='api.html'>API reference guide</a><i class="fa fa-external-link external_link" aria-hidden="true"></i>
 
 includes:
   - solution_overview

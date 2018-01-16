@@ -16,3 +16,4 @@ These tools, built for your programming language, can streamline your integratio
 
 ## Appendix
 
+### Environment Variables

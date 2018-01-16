@@ -58,3 +58,43 @@ The following table shows the various integration options available to you. The 
     	<td><p><a href="/us/documentation/automatic/201752090" target="_blank">Amazon Pay and Login with Amazon recurring payments integration guide</a></p></td>
   	</tr>
 </table>
+
+## Comparison chart
+
+<table cellspacing="0" cellpadding="0" id="comparison_chart">
+  <tr>
+    <td>Find the best solution</td>
+    <td>Button generator</td>
+    <td>Hosted solution</td>
+    <td>One-time payments</td>
+    <td>Automatic payments</td>
+  </tr>
+  <tr>
+    <td>Variable tax & shipping rates</td>
+    <td class="center">-</td>
+    <td class="center bold">Y</td>
+    <td class="center bold">Y</td>
+    <td class="center bold">Y</td>
+  </tr>
+  <tr>
+    <td>Amazon checkout page</td>
+    <td class="center bold">Y</td>
+    <td class="center bold">Y</td>
+    <td class="center">-</td>
+    <td class="center">-</td>
+  </tr>
+  <tr>
+    <td>API integration required</td>
+    <td class="center">-</td>
+    <td class="center bold">Y</td>
+    <td class="center bold">Y</td>
+    <td class="center bold">Y</td>
+  </tr>
+  <tr>
+    <td>Recurring payments</td>
+    <td class="center">-</td>
+    <td class="center">-</td>
+    <td class="center">-</td>
+    <td class="center bold">Y</td>
+  </tr>
+</table>
